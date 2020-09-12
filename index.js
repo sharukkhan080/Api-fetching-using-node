@@ -24,10 +24,10 @@ app.post("/post",function (req,res) {
     ]
   };
   var jsonFile=JSON.stringify(data);
-  const url="https://us17.api.mailchimp.com/3.0/lists/3224dccc32";
+  const url="https://us17.api.mailchimp.com/3.0/lists/uniqueid";
   const options={
     method:"POST",
-    auth:"srk80:53b9da7c97035b5cd975854ee29f4c84-us17"
+    auth:"srk80:your api key"
   }
 
   const request1=https.request(url,options,function (response) {
